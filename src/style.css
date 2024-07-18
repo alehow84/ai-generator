@@ -1,3 +1,67 @@
 body {
+  background-color: rgb(218, 231, 255);
+  font-family: "Inconsolata", monospace;
+  font-optical-sizing: auto;
+}
+
+h1 {
+  line-height: 48px;
+  font-size: 36px;
+}
+.container {
+  margin: 120px auto;
+  max-width: 700px;
+}
+
+form,
+.quote-container {
+  background-color: white;
+  padding: 10px;
+  border-radius: 8px;
+  font-size: large;
+  margin: 10px;
+}
+h1,
+.intro-container,
+footer {
   text-align: center;
+}
+form {
+  display: flex;
+}
+#name {
+  font-family: "Playwrite HR Lijeva", cursive;
+  font-optical-sizing: auto;
+}
+a {
+  text-decoration: none;
+}
+.prompt {
+  padding: 18px;
+  font-family: "Inconsolata", monospace;
+  font-weight: 700;
+  font-size: medium;
+  width: 80%;
+  border-radius: 8px;
+  margin-right: 5px;
+}
+
+.submit-btn {
+  border-radius: 10px;
+  font-family: "Inconsolata", monospace;
+  background-color: orange;
+  border-color: orange;
+  font-weight: 500;
+  font-size: medium;
+}
+footer {
+  margin: 40px 0px;
+  font-size: small;
+}
+.generator-container {
+  margin: 40px 0px;
+}
+.quote-container {
+  line-height: 24px;
+  border-left: 4px solid orange;
 }
