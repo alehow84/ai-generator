@@ -14,6 +14,7 @@
       href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&family=Playwrite+HR+Lijeva:wght@100..400&display=swap"
       rel="stylesheet"
     />
+    <script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>AI "inspirational" quote generator 🫠</title>
@@ -35,7 +36,7 @@
           </p>
         </div>
         <div class="generator-container">
-          <form>
+          <form id="quote-form">
             <input
               type="text"
               placeholder="Enter your topic here..."
@@ -44,7 +45,7 @@
             />
             <input type="submit" class="submit-btn" />
           </form>
-          <div class="quote-container">
+          <div class="quote-container" id="quote">
             The cheerfully nihilistic quote will go here with an image as a
             background?
           </div>
