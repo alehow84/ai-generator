@@ -1,8 +1,13 @@
+new Typewriter("#quote", {
+  strings: "Waiting for your choice of topic...",
+  autoStart: true,
+  delay: 10,
+  cursor: "",
+});
+
 let quoteFormEvent = document.querySelector("#quote-form");
 
 function displayQuote(response) {
-  console.log(response);
-  console.log("quote generated");
   new Typewriter("#quote", {
     strings: response.data.answer,
     autoStart: true,
@@ -13,6 +18,13 @@ function displayQuote(response) {
 
 function generateQuote(event) {
   event.preventDefault();
+
+  new Typewriter("#quote", {
+    strings: "Generating your inspirational quote...🛠️",
+    autoStart: true,
+    delay: 5,
+    cursor: "",
+  });
 
   let userTopic = document.querySelector("#topic").value;
 
